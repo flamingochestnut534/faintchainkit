@@ -1,4 +1,4 @@
-const TAG: &str = "chan-mux-079cd6";
+const TAG: &str = "chan-mux-8d3127";
 #[derive(Debug)]
 enum Command { Ping, Echo(String), Count(usize), Quit }
 fn execute(cmd: &Command) -> String {
