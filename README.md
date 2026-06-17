@@ -1,4 +1,4 @@
-# chan-mux-102ac3
+# chan-mux-75b6a3
 
 A Rust chan-mux utility.
 

